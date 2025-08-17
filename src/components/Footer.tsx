@@ -82,7 +82,7 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="https://wa.me/573001234567"
+              href="https://wa.me/573215086797"
               className="opacity-60 hover:opacity-100"
             >
               WhatsApp

@@ -24,7 +24,7 @@ export const Hero = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
           <a
-            href="https://wa.me/573001234567?text=Hola%20ARRIVAL,%20quiero%20comenzar%20un%20proyecto"
+            href="https://wa.me/573215086797?text=Hola%20ARRIVAL,%20quiero%20comenzar%20un%20proyecto"
             target="_blank"
             rel="noreferrer noopener"
             className="inline-flex items-center justify-center bg-black hover:bg-gray-800 text-white dark:bg-white dark:text-black dark:hover:bg-gray-200 px-8 py-4 text-lg font-semibold rounded-md transition-colors"
@@ -34,7 +34,7 @@ export const Hero = () => {
 
           <a
             rel="noreferrer noopener"
-            href="https://wa.me/573001234567?text=Hola%20ARRIVAL,%20me%20gustaría%20ver%20una%20demo"
+            href="https://wa.me/573215086797?text=Hola%20ARRIVAL,%20me%20gustaría%20ver%20una%20demo"
             target="_blank"
             className={`${buttonVariants({
               variant: "outline",

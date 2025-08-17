@@ -27,7 +27,7 @@ export const Newsletter = () => {
           onSubmit={handleSubmit}
         >
           <a
-            href="https://wa.me/573001234567?text=Hola%20ARRIVAL,%20quiero%20agendar%20una%20consulta%20gratuita"
+            href="https://wa.me/573215086797?text=Hola%20ARRIVAL,%20quiero%20agendar%20una%20consulta%20gratuita"
             target="_blank"
             rel="noreferrer noopener"
             className="inline-flex items-center justify-center bg-black hover:bg-gray-800 text-white dark:bg-white dark:text-black dark:hover:bg-gray-200 px-8 py-4 text-lg font-semibold rounded-md transition-colors w-full"
@@ -40,7 +40,7 @@ export const Newsletter = () => {
           <p className="text-muted-foreground">Contacto directo:</p>
           <p className="font-semibold">tech.team@thearrival.tech</p>
           <p className="text-muted-foreground">CL 79 # 5 - 81, Bogotá D.C., Colombia</p>
-          <p className="text-muted-foreground">Tel: +57 (300) 123-4567</p>
+          <p className="text-muted-foreground">Tel: +57 (321) 508-6797</p>
         </div>
       </div>
 

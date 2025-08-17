@@ -92,7 +92,7 @@ export const Navbar = () => {
                   ))}
                   <a
                     rel="noreferrer noopener"
-                    href="https://wa.me/573001234567?text=Hola%20ARRIVAL,%20quiero%20comenzar%20un%20proyecto"
+                    href="https://wa.me/573215086797?text=Hola%20ARRIVAL,%20quiero%20comenzar%20un%20proyecto"
                     target="_blank"
                     className={`w-[110px] border ${buttonVariants({
                       variant: "secondary",
@@ -124,7 +124,7 @@ export const Navbar = () => {
           <div className="hidden md:flex gap-2">
             <a
               rel="noreferrer noopener"
-              href="https://wa.me/573001234567?text=Hola%20ARRIVAL,%20quiero%20comenzar%20un%20proyecto"
+              href="https://wa.me/573215086797?text=Hola%20ARRIVAL,%20quiero%20comenzar%20un%20proyecto"
               target="_blank"
               className={`border ${buttonVariants({ variant: "secondary" })}`}
             >
