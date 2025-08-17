@@ -35,10 +35,6 @@ const routeList: RouteProps[] = [
     href: "#contact",
     label: "Contacto",
   },
-  {
-    href: "#privacy",
-    label: "Privacidad",
-  },
 ];
 
 export const Navbar = () => {
