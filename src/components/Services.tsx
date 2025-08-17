@@ -1,5 +1,5 @@
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { Search, Wallet, BarChart3, Rocket, Code, Palette, TrendingUp } from "lucide-react";
+import { Rocket, Code, Palette, TrendingUp } from "lucide-react";
 import cubeLeg from "../assets/cube-leg.png";
 
 interface ServiceProps {

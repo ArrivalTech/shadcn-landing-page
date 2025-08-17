@@ -1,5 +1,4 @@
 import { About } from "./components/About";
-import { Cta } from "./components/Cta";
 import { FAQ } from "./components/FAQ";
 import { Features } from "./components/Features";
 import { Footer } from "./components/Footer";

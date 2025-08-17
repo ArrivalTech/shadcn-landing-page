@@ -1,4 +1,3 @@
-import { Button } from "./ui/button";
 import { buttonVariants } from "./ui/button";
 
 export const Hero = () => {
