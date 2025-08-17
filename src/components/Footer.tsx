@@ -10,10 +10,9 @@ export const Footer = () => {
           <a
             rel="noreferrer noopener"
             href="/"
-            className="font-bold text-xl flex items-center gap-2"
+            className="flex items-center"
           >
-            <img src={logo} alt="ARRIVAL Logo" className="h-8 w-auto" />
-            ARRIVAL
+            <img src={logo} alt="ARRIVAL Logo" className="h-12 w-auto" />
           </a>
           <p className="text-muted-foreground mt-2">
             Donde tu idea se convierte en la próxima gran app. Desarrollo tecnológico de clase mundial desde Bogotá para el mundo.

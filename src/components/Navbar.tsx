@@ -47,10 +47,9 @@ export const Navbar = () => {
             <a
               rel="noreferrer noopener"
               href="/"
-              className="ml-2 font-bold text-xl flex items-center gap-2"
+              className="ml-2 flex items-center"
             >
-              <img src={logo} alt="ARRIVAL Logo" className="h-8 w-auto" />
-              ARRIVAL
+              <img src={logo} alt="ARRIVAL Logo" className="h-10 w-auto" />
             </a>
           </NavigationMenuItem>
 
@@ -73,9 +72,8 @@ export const Navbar = () => {
 
               <SheetContent side={"left"}>
                 <SheetHeader>
-                  <SheetTitle className="font-bold text-xl flex items-center gap-2">
-                    <img src={logo} alt="ARRIVAL Logo" className="h-6 w-auto" />
-                    ARRIVAL
+                  <SheetTitle className="flex items-center justify-center">
+                    <img src={logo} alt="ARRIVAL Logo" className="h-8 w-auto" />
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">

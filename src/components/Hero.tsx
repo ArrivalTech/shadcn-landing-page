@@ -5,18 +5,12 @@ export const Hero = () => {
   return (
     <section className="container grid place-items-center py-20 md:py-32 gap-10">
       <div className="text-center space-y-8 max-w-4xl">
-        {/* Logo principal */}
-        <div className="flex justify-center mb-8">
-          <img src={logo} alt="ARRIVAL Logo" className="h-16 md:h-20 w-auto" />
-        </div>
-        
         <main className="text-5xl md:text-7xl font-bold leading-tight">
-          <h1 className="inline">
-            <span className="inline bg-gradient-to-r from-black to-gray-600 dark:from-white dark:to-gray-300 text-transparent bg-clip-text">
-              ARRIVAL
-            </span>
-          </h1>
-          <br />
+          {/* Logo principal */}
+          <div className="flex justify-center mb-8">
+            <img src={logo} alt="ARRIVAL Logo" className="h-20 md:h-24 w-auto" />
+          </div>
+          
           <h2 className="text-3xl md:text-4xl font-normal text-gray-600 dark:text-gray-400 mt-4">
             Desarrollo Tecnológico de Clase Mundial
           </h2>
