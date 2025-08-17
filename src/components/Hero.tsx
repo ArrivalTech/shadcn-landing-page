@@ -27,7 +27,7 @@ export const Hero = () => {
             size="lg" 
             className="bg-black hover:bg-gray-800 text-white dark:bg-white dark:text-black dark:hover:bg-gray-200 px-8 py-4 text-lg font-semibold"
           >
-            🚀 Comenzar Proyecto
+            Comenzar Proyecto
           </Button>
 
           <a

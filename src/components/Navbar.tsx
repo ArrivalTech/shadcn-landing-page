@@ -106,7 +106,7 @@ export const Navbar = () => {
                       variant: "secondary",
                     })}`}
                   >
-                    🚀 Comenzar Proyecto
+                    Comenzar Proyecto
                   </a>
                 </nav>
               </SheetContent>
@@ -135,7 +135,7 @@ export const Navbar = () => {
               href="#contact"
               className={`border ${buttonVariants({ variant: "secondary" })}`}
             >
-              🚀 Comenzar Proyecto
+              Comenzar Proyecto
             </a>
 
             <ModeToggle />

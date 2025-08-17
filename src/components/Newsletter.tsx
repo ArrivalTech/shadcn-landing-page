@@ -31,14 +31,14 @@ export const Newsletter = () => {
             className="bg-muted/50 dark:bg-muted/80 "
             aria-label="email"
           />
-          <Button>📅 Agendar Consulta</Button>
+          <Button>Agendar Consulta</Button>
         </form>
         
         <div className="text-center mt-8 space-y-2">
           <p className="text-muted-foreground">Contacto directo:</p>
           <p className="font-semibold">tech.team@thearrival.tech</p>
           <p className="text-muted-foreground">CL 79 # 5 - 81, Bogotá D.C., Colombia</p>
-          <p className="text-muted-foreground">WhatsApp: +57 (300) 123-4567</p>
+          <p className="text-muted-foreground">Tel: +57 (300) 123-4567</p>
         </div>
       </div>
 
