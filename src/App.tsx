@@ -22,7 +22,6 @@ function App() {
       <HowItWorks />
       <Features />
       <Services />
-      <Cta />
       <Newsletter />
       <FAQ />
       <Footer />

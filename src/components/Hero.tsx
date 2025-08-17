@@ -23,22 +23,25 @@ export const Hero = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-          <Button 
-            size="lg" 
-            className="bg-black hover:bg-gray-800 text-white dark:bg-white dark:text-black dark:hover:bg-gray-200 px-8 py-4 text-lg font-semibold"
+          <a
+            href="https://wa.me/573001234567?text=Hola%20ARRIVAL,%20quiero%20comenzar%20un%20proyecto"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="inline-flex items-center justify-center bg-black hover:bg-gray-800 text-white dark:bg-white dark:text-black dark:hover:bg-gray-200 px-8 py-4 text-lg font-semibold rounded-md transition-colors"
           >
-            Comenzar Proyecto
-          </Button>
+            WhatsApp
+          </a>
 
           <a
             rel="noreferrer noopener"
-            href="#cases"
+            href="https://wa.me/573001234567?text=Hola%20ARRIVAL,%20me%20gustaría%20ver%20una%20demo"
+            target="_blank"
             className={`${buttonVariants({
               variant: "outline",
               size: "lg",
             })} border-black text-black hover:bg-black hover:text-white dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-black px-8 py-4 text-lg font-semibold`}
           >
-            Ver Demo
+            Solicitar Demo
           </a>
         </div>
 

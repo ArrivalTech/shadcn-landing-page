@@ -92,13 +92,13 @@ export const Navbar = () => {
                   ))}
                   <a
                     rel="noreferrer noopener"
-                    href="#contact"
+                    href="https://wa.me/573001234567?text=Hola%20ARRIVAL,%20quiero%20comenzar%20un%20proyecto"
                     target="_blank"
                     className={`w-[110px] border ${buttonVariants({
                       variant: "secondary",
                     })}`}
                   >
-                    Comenzar Proyecto
+                    WhatsApp
                   </a>
                 </nav>
               </SheetContent>
@@ -124,10 +124,11 @@ export const Navbar = () => {
           <div className="hidden md:flex gap-2">
             <a
               rel="noreferrer noopener"
-              href="#contact"
+              href="https://wa.me/573001234567?text=Hola%20ARRIVAL,%20quiero%20comenzar%20un%20proyecto"
+              target="_blank"
               className={`border ${buttonVariants({ variant: "secondary" })}`}
             >
-              Comenzar Proyecto
+              WhatsApp
             </a>
 
             <ModeToggle />

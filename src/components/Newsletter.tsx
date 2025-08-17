@@ -26,12 +26,14 @@ export const Newsletter = () => {
           className="flex flex-col w-full md:flex-row md:w-6/12 lg:w-4/12 mx-auto gap-4 md:gap-2"
           onSubmit={handleSubmit}
         >
-          <Input
-            placeholder="tu@empresa.com"
-            className="bg-muted/50 dark:bg-muted/80 "
-            aria-label="email"
-          />
-          <Button>Agendar Consulta</Button>
+          <a
+            href="https://wa.me/573001234567?text=Hola%20ARRIVAL,%20quiero%20agendar%20una%20consulta%20gratuita"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="inline-flex items-center justify-center bg-black hover:bg-gray-800 text-white dark:bg-white dark:text-black dark:hover:bg-gray-200 px-8 py-4 text-lg font-semibold rounded-md transition-colors w-full"
+          >
+            Contactar por WhatsApp
+          </a>
         </form>
         
         <div className="text-center mt-8 space-y-2">
