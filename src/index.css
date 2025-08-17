@@ -19,11 +19,11 @@ html {
 
 @keyframes shadow-slide {
   from {
-    background: hsl(var(--primary) / 20%);
+    background: hsl(0 0% 0% / 20%);
     right: 460px;
   }
   to {
-    background: hsl(var(--primary) / 80%);
+    background: hsl(0 0% 0% / 80%);
     right: 160px;
   }
 }
@@ -35,11 +35,11 @@ html {
 
   @keyframes shadow-slide {
     from {
-      background: hsl(var(--primary) / 20%);
+      background: hsl(0 0% 0% / 20%);
       right: 460px;
     }
     to {
-      background: hsl(var(--primary) / 50%);
+      background: hsl(0 0% 0% / 50%);
       right: 160px;
     }
   }
@@ -55,11 +55,11 @@ html {
 
   @keyframes shadow-slide {
     from {
-      background: hsl(var(--primary) / 20%);
+      background: hsl(0 0% 0% / 20%);
       right: 280px;
     }
     to {
-      background: hsl(var(--primary) / 30%);
+      background: hsl(0 0% 0% / 30%);
       right: 100px;
     }
   }

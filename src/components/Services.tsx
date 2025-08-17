@@ -13,25 +13,25 @@ const serviceList: ServiceProps[] = [
     title: "Desarrollo Full-Stack",
     description:
       "Aplicaciones web y móviles con las últimas tecnologías: React, Node.js, Flutter, y más.",
-    icon: <Code className="w-10 h-10 text-primary" />,
+    icon: <Code className="w-10 h-10 text-black dark:text-white" />,
   },
   {
     title: "DevOps & Cloud",
     description:
       "Infraestructura escalable en AWS, Google Cloud y Azure. CI/CD automatizado y monitoreo 24/7.",
-    icon: <Rocket className="w-10 h-10 text-primary" />,
+    icon: <Rocket className="w-10 h-10 text-black dark:text-white" />,
   },
   {
     title: "UI/UX Design",
     description:
       "Diseños que enamoran usuarios y convierten visitantes en clientes fieles. Design Systems escalables.",
-    icon: <Palette className="w-10 h-10 text-primary" />,
+    icon: <Palette className="w-10 h-10 text-black dark:text-white" />,
   },
   {
     title: "Growth Hacking",
     description:
       "Estrategias de crecimiento digital probadas. Analytics avanzados y optimización de conversión.",
-    icon: <TrendingUp className="w-10 h-10 text-primary" />,
+    icon: <TrendingUp className="w-10 h-10 text-black dark:text-white" />,
   },
 ];
 
@@ -55,7 +55,7 @@ export const Services = () => {
             {serviceList.map(({ icon, title, description }: ServiceProps) => (
               <Card key={title}>
                 <CardHeader className="space-y-1 flex md:flex-row justify-start items-start gap-4">
-                  <div className="mt-1 bg-primary/20 p-1 rounded-2xl">
+                  <div className="mt-1 bg-black/10 dark:bg-white/10 p-1 rounded-2xl">
                     {icon}
                   </div>
                   <div>

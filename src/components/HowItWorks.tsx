@@ -9,25 +9,25 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    icon: <Heart className="w-10 h-10 text-primary" />,
+    icon: <Heart className="w-10 h-10 text-black dark:text-white" />,
     title: "Diseño que enamora",
     description:
       "Interfaces adictivas que conquistan usuarios desde el primer clic",
   },
   {
-    icon: <Zap className="w-10 h-10 text-primary" />,
+    icon: <Zap className="w-10 h-10 text-black dark:text-white" />,
     title: "Arquitectura robusta",
     description:
       "Escalabilidad mundial preparada para millones de usuarios",
   },
   {
-    icon: <Rocket className="w-10 h-10 text-primary" />,
+    icon: <Rocket className="w-10 h-10 text-black dark:text-white" />,
     title: "Agilidad de negocio",
     description:
       "MVPs funcionales en semanas, no meses",
   },
   {
-    icon: <Globe className="w-10 h-10 text-primary" />,
+    icon: <Globe className="w-10 h-10 text-black dark:text-white" />,
     title: "Visión global",
     description:
       "Estrategias para conquistar mercados internacionales",
