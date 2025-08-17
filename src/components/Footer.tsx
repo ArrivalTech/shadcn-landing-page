@@ -54,39 +54,6 @@ export const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Industrias</h3>
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#cases"
-              className="opacity-60 hover:opacity-100"
-            >
-              FinTech
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#cases"
-              className="opacity-60 hover:opacity-100"
-            >
-              HealthTech
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#cases"
-              className="opacity-60 hover:opacity-100"
-            >
-              EdTech
-            </a>
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-2">
           <h3 className="font-bold text-lg">Empresa</h3>
           <div>
             <a
@@ -98,25 +65,6 @@ export const Footer = () => {
             </a>
           </div>
 
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#team"
-              className="opacity-60 hover:opacity-100"
-            >
-              Equipo
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#cases"
-              className="opacity-60 hover:opacity-100"
-            >
-              Casos de Éxito
-            </a>
-          </div>
         </div>
 
         <div className="flex flex-col gap-2">
