@@ -10,7 +10,6 @@ import { Newsletter } from "./components/Newsletter";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { Services } from "./components/Services";
 import { Sponsors } from "./components/Sponsors";
-import { Testimonials } from "./components/Testimonials";
 import "./App.css";
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
       <Features />
       <Services />
       <Cta />
-      <Testimonials />
       <Newsletter />
       <FAQ />
       <Footer />
