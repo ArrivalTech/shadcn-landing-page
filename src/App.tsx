@@ -9,9 +9,31 @@ import { Newsletter } from "./components/Newsletter";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { Services } from "./components/Services";
 import { Sponsors } from "./components/Sponsors";
+import { PrivacyPolicyPage } from "./pages/PrivacyPolicy";
 import "./App.css";
+import { useState } from "react";
 
 function App() {
+  const [currentPage, setCurrentPage] = useState<'home' | 'privacy'>('home');
+
+  // Listen for hash changes to handle navigation
+  window.addEventListener('hashchange', () => {
+    if (window.location.hash === '#privacy-policy') {
+      setCurrentPage('privacy');
+    } else {
+      setCurrentPage('home');
+    }
+  });
+
+  // Check initial hash
+  if (window.location.hash === '#privacy-policy' && currentPage === 'home') {
+    setCurrentPage('privacy');
+  }
+
+  if (currentPage === 'privacy') {
+    return <PrivacyPolicyPage />;
+  }
+
   return (
     <>
       <Navbar />
