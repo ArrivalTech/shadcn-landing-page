@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowLeft, Shield, Lock, Eye, Users, FileText, Clock, Mail, Phone } from "lucide-react";
+import { ArrowLeft, Shield, Lock, Eye, Users, FileText, Clock, Mail, Phone, Database, Globe, UserCheck, AlertTriangle } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
 import { Button } from "../components/ui/button";
 import logo from "../assets/logo.png";
@@ -10,99 +10,157 @@ export const PrivacyPolicyPage = () => {
   const sections = [
     {
       id: "info-collection",
-      title: "Información que Recopilamos",
+      title: "1. Información que recopilamos",
       icon: <FileText className="w-6 h-6" />,
       content: {
-        intro: "En ARRIVAL, recopilamos únicamente la información necesaria para brindarte el mejor servicio de desarrollo tecnológico:",
+        intro: "Recopilamos distintos tipos de información personal y datos técnicos para poder brindarte nuestros servicios de forma eficaz. Esto incluye:",
         items: [
-          "Información de contacto personal (nombre completo, email corporativo, número de teléfono)",
-          "Detalles de tu empresa (nombre, sector, tamaño, ubicación)",
-          "Información del proyecto (descripción, objetivos, presupuesto estimado, timeline)",
-          "Comunicaciones y archivos compartidos a través de WhatsApp, email o videollamadas",
-          "Datos técnicos del proyecto (especificaciones, wireframes, documentación)",
-          "Información de facturación y pagos (solo cuando inicias un proyecto con nosotros)"
+          "Datos de identificación: Información de registro básica, como tu nombre, correo electrónico, número de teléfono y otros datos que proporciones al crear una cuenta en la App o al comunicarte con nosotros.",
+          "Datos de la calculadora de carbono: Información que ingresas en la App para calcular tu huella de carbono (por ejemplo, datos sobre tu consumo de energía, transporte, hábitos de consumo), así como resultados de cálculo y preferencias de compensación con bonos de carbono.",
+          "Permiso de cámara: Si lo autorizas, podremos acceder a la cámara de tu dispositivo, por ejemplo, para escanear códigos, capturar imágenes relacionadas con funcionalidades de Greenify o permitirte subir fotos (p. ej., foto de perfil o comprobantes). Puedes negar o revocar este permiso en cualquier momento.",
+          "Permiso de contactos: Con tu consentimiento expreso, la App podría acceder a tu lista de contactos (por ejemplo, para invitar amigos a unirse a Greenify, compartir resultados o encontrar contactos que ya usan la App).",
+          "Datos biométricos (autenticación): Podemos ofrecerte la opción de utilizar la autenticación biométrica disponible en tu dispositivo (como huella dactilar o reconocimiento facial) para iniciar sesión de forma segura en Greenify.",
+          "Datos de pago: Si realizas transacciones de compensación de huella de carbono a través de la App, recopilaremos la información necesaria para procesar el pago. Los pagos son gestionados de manera segura por nuestro proveedor de pagos Wompi, que cumple con estándares de seguridad PCI DSS.",
+          "Datos de uso y navegación: Información sobre cómo interactúas con la App, las funciones que utilizas, fecha y hora de acceso, tiempo de uso, errores de la aplicación, y demás datos de diagnóstico.",
+          "Datos técnicos del dispositivo: Datos como el modelo de tu teléfono, versión del sistema operativo, identificadores únicos del dispositivo o publicidad (IDFA/GAID), idioma, zona horaria, proveedor de servicios móviles, dirección IP, y otros datos técnicos."
+        ]
+      }
+    },
+    {
+      id: "legal-basis",
+      title: "2. Base legal para el tratamiento de datos",
+      icon: <UserCheck className="w-6 h-6" />,
+      content: {
+        intro: "Nos basamos en distintas bases legales reconocidas internacionalmente para procesar tus datos personales de forma lícita:",
+        items: [
+          "Ejecución de un contrato: Tratamos datos que sean necesarios para prestarte el servicio que nos solicitas a través de la App. Por ejemplo, usamos tus datos de registro y calculadora de carbono para crear tu cuenta, calcular tu huella y ofrecerte funcionalidades de compensación.",
+          "Consentimiento: Solicitamos tu consentimiento para ciertos tratamientos no esenciales. Por ejemplo, te pediremos permiso antes de acceder a tu cámara, contactos o para utilizar herramientas de analítica y cookies/tracking con fines de mejora de la experiencia.",
+          "Interés legítimo: Podemos tratar algunos datos en función de nuestros intereses comerciales legítimos, siempre que no prevalezcan tus derechos y libertades. Esto incluye el análisis y mejora del rendimiento de la App, la prevención de fraudes, la seguridad de la información.",
+          "Cumplimiento de obligaciones legales: En ciertos casos, debemos procesar y conservar tus datos para cumplir con leyes o regulaciones aplicables. Por ejemplo, normativas tributarias, contables y fiscales pueden exigirnos guardar registros de transacciones realizadas en la App."
         ]
       }
     },
     {
       id: "data-usage",
-      title: "Cómo Utilizamos tus Datos",
+      title: "3. Finalidades del tratamiento",
       icon: <Users className="w-6 h-6" />,
       content: {
-        intro: "Tus datos son utilizados exclusivamente para:",
+        intro: "Usamos la información recopilada estrictamente para las finalidades que se describen a continuación:",
         items: [
-          "Proporcionar consultoría estratégica y desarrollo de aplicaciones de clase mundial",
-          "Comunicarnos contigo sobre el progreso de tu proyecto y actualizaciones importantes",
-          "Generar propuestas personalizadas y cotizaciones precisas",
-          "Coordinar reuniones, demos y presentaciones de avances",
-          "Procesar pagos y generar facturas (solo para clientes activos)",
-          "Mejorar continuamente nuestros servicios basados en feedback real",
-          "Cumplir con obligaciones legales y fiscales en Colombia"
-        ]
-      }
-    },
-    {
-      id: "data-protection",
-      title: "Protección y Seguridad",
-      icon: <Shield className="w-6 h-6" />,
-      content: {
-        intro: "Implementamos medidas de seguridad de nivel empresarial:",
-        items: [
-          "Encriptación AES-256 para todos los datos en tránsito y en reposo",
-          "Servidores seguros en AWS con certificaciones SOC 2 y ISO 27001",
-          "Acceso restringido solo a miembros autorizados del equipo ARRIVAL",
-          "Autenticación de dos factores (2FA) para todos los sistemas internos",
-          "Auditorías de seguridad trimestrales realizadas por terceros certificados",
-          "Backups automáticos diarios con encriptación end-to-end",
-          "Monitoreo 24/7 de actividad sospechosa y intentos de acceso no autorizado"
+          "Proveer el servicio de Greenify: Utilizamos tus datos para permitirte usar la App y sus funcionalidades principales, como calcular tu huella de carbono, mostrarte resultados y opciones de compensación, gestionar tu cuenta de usuario.",
+          "Procesar transacciones y compensaciones: La información de pagos y transacciones se emplea para facilitar la compra de bonos de carbono u otras compensaciones que realices a través de la App.",
+          "Mejorar la experiencia y funcionalidades: Los datos de uso, navegación y preferencias nos ayudan a comprender cómo interactúas con Greenify para optimizar la interfaz y desarrollar nuevas funciones.",
+          "Comunicaciones y notificaciones: Podemos utilizar tus datos de contacto para enviarte comunicados importantes sobre la App, avisos de seguridad, actualizaciones de software, cambios en nuestros términos.",
+          "Seguridad y prevención de fraude: Tu información puede ser procesada para proteger la seguridad de la plataforma, de nuestros usuarios y de tus datos.",
+          "Cumplimiento legal y requerimientos regulatorios: En caso de ser necesario, utilizaremos y conservaremos la información pertinente para atender requisitos legales aplicables."
         ]
       }
     },
     {
       id: "data-sharing",
-      title: "Compartir Información",
+      title: "4. Compartición de datos con terceros",
       icon: <Lock className="w-6 h-6" />,
       content: {
-        intro: "ARRIVAL NUNCA vende, alquila o comparte tu información. Solo compartimos datos en casos específicos:",
+        intro: "En Greenify no vendemos, alquilamos ni intercambiamos tus datos personales a terceros bajo ninguna circunstancia. Solo compartimos tu información cuando es necesario:",
         items: [
-          "Con tu consentimiento explícito y por escrito",
-          "Con proveedores de servicios esenciales (hosting, email) bajo estrictos NDAs",
-          "Para cumplir con órdenes judiciales o requerimientos legales válidos",
-          "En caso de fusión o adquisición (con notificación previa de 30 días)",
-          "Para proteger los derechos, propiedad o seguridad de ARRIVAL o terceros"
+          "Proveedores de infraestructura y almacenamiento: Utilizamos la nube de Microsoft Azure para hospedar nuestros servidores y bases de datos. Microsoft solo accede a la información en la medida necesaria para brindar su servicio de hosting.",
+          "Procesadores de pago: Para gestionar los pagos dentro de la App, trabajamos con Wompi, una pasarela de pagos segura. Wompi actúa como un tercero encargado del tratamiento, cumpliendo con estrictos estándares de seguridad (PCI DSS).",
+          "Servicios de analítica y mejora: Empleamos herramientas de análisis de terceros como Google Analytics para recopilar datos estadísticos agregados sobre el uso de la App.",
+          "Servicios de autenticación y redes sociales: Si decides utilizar opciones de autenticación de terceros para ingresar a Greenify (como 'Continuar con Google', 'Iniciar sesión con Apple' o 'Login con Facebook').",
+          "Proveedores y aliados técnicos: En ocasiones podemos contar con empresas o contratistas que nos brindan soporte en distintas operaciones de la App, siempre bajo obligaciones de confidencialidad.",
+          "Requerimientos legales: Podríamos divulgar información personal cuando consideremos de buena fe que dicha divulgación es necesaria para cumplir con una obligación legal o responder a un proceso legal."
         ]
       }
     },
     {
-      id: "your-rights",
-      title: "Tus Derechos Fundamentales",
-      icon: <Eye className="w-6 h-6" />,
+      id: "international-transfers",
+      title: "5. Transferencias internacionales",
+      icon: <Globe className="w-6 h-6" />,
       content: {
-        intro: "Como titular de datos, tienes derechos irrenunciables:",
+        intro: "ARRIVAL SAS opera desde Colombia, pero algunos de los terceros y servicios que utilizamos se encuentran ubicados en otros países:",
         items: [
-          "Derecho de acceso: Solicitar una copia completa de todos tus datos",
-          "Derecho de rectificación: Corregir información incorrecta o desactualizada",
-          "Derecho de supresión: Solicitar la eliminación completa de tus datos",
-          "Derecho de oposición: Oponerte al procesamiento de tus datos personales",
-          "Derecho de portabilidad: Recibir tus datos en formato estructurado",
-          "Derecho de limitación: Restringir el procesamiento en circunstancias específicas",
-          "Derecho a no ser objeto de decisiones automatizadas"
+          "Tus datos pueden transferirse y almacenarse fuera de tu país de residencia, incluyendo países que pueden tener normas de protección de datos diferentes.",
+          "Implementamos las garantías adecuadas conforme a la legislación aplicable para proteger tu información en transferencias internacionales.",
+          "Esto puede incluir la firma de cláusulas contractuales estándar aprobadas por la Comisión Europea, certificaciones bajo marcos de protección reconocidos internacionalmente.",
+          "Nos aseguramos de que tus derechos viajen con tus datos, y de que cualquier entidad fuera de Colombia que tenga acceso a tu información personal ofrezca un nivel de protección acorde a esta Política."
         ]
       }
     },
     {
       id: "data-retention",
-      title: "Retención de Datos",
+      title: "6. Conservación de los datos",
       icon: <Clock className="w-6 h-6" />,
       content: {
-        intro: "Conservamos tus datos solo el tiempo necesario:",
+        intro: "Conservamos tus datos personales únicamente durante el tiempo que sea necesario para cumplir con las finalidades para las cuales fueron recopilados:",
         items: [
-          "Datos de prospecto: 2 años desde el último contacto",
-          "Datos de cliente activo: Durante la duración del proyecto + 5 años",
-          "Información de facturación: 10 años (requerimiento fiscal colombiano)",
-          "Comunicaciones del proyecto: 3 años después de la finalización",
-          "Datos técnicos del proyecto: 5 años (para soporte y mantenimiento)",
-          "Eliminación automática: Sistema automatizado elimina datos vencidos"
+          "Los datos asociados a tu cuenta y perfil de usuario se mantendrán mientras tengas una cuenta activa en Greenify. Si decides eliminar tu cuenta, procederemos a eliminar o anonimizar dicha información.",
+          "Los datos recopilados con tu consentimiento para fines específicos se retendrán mientras no revoques dicho consentimiento o hasta cumplida la finalidad original.",
+          "La información de transacciones económicas se almacenará durante los plazos que exijan las leyes financieras, tributarias y comerciales (generalmente 5 años en Colombia).",
+          "Los registros de seguridad, logs del servidor y copias de respaldo se conservan por períodos limitados (generalmente pocos meses) a efectos de seguridad y continuidad del servicio.",
+          "Una vez que vence el periodo de conservación pertinente, procedemos a la supresión segura de los datos personales."
+        ]
+      }
+    },
+    {
+      id: "user-rights",
+      title: "7. Derechos de los usuarios",
+      icon: <Eye className="w-6 h-6" />,
+      content: {
+        intro: "Como titular de tus datos personales, cuentas con una serie de derechos que puedes ejercer en cualquier momento:",
+        items: [
+          "Acceder a tus datos: Puedes solicitarnos que te confirmemos si estamos tratando datos personales tuyos y requerir una copia de dicha información.",
+          "Rectificación: Tienes derecho a corregir o actualizar datos personales inexactos, desactualizados o incompletos que tengamos sobre ti.",
+          "Supresión: También llamado 'derecho al olvido'. Puedes solicitarnos la eliminación de tus datos personales cuando ya no sean necesarios para las finalidades originales.",
+          "Oposición al tratamiento: En determinadas situaciones, puedes oponerte a que tratemos tus datos personales (por ejemplo, para fines de marketing directo).",
+          "Limitación del tratamiento: Puedes solicitar que 'congelemos' el uso de tus datos personales en ciertas circunstancias.",
+          "Portabilidad de datos: Tienes derecho a obtener ciertos datos personales tuyos en un formato estructurado, de uso común y lectura mecánica.",
+          "Retirar el consentimiento: Si has otorgado consentimiento para algún tratamiento específico, tienes derecho a revocar ese consentimiento en cualquier momento.",
+          "A no ser objeto de decisiones automatizadas: Greenify no lleva a cabo decisiones basadas únicamente en tratamientos automatizados que produzcan efectos jurídicos significativos."
+        ]
+      }
+    },
+    {
+      id: "security",
+      title: "8. Seguridad de la información",
+      icon: <Shield className="w-6 h-6" />,
+      content: {
+        intro: "En ARRIVAL SAS implementamos medidas técnicas, organizativas y administrativas de primer nivel para proteger la información personal:",
+        items: [
+          "Cifrado: Los datos sensibles que se transmiten entre tu dispositivo y nuestros servidores viajan protegidos mediante protocolos de cifrado (SSL/TLS).",
+          "Control de accesos: Limitamos estrictamente el acceso a los datos personales únicamente a aquellos empleados, contratistas y agentes que necesitan conocer dicha información.",
+          "Infraestructura segura: Nuestros servicios funcionan sobre plataformas de nube reconocidas (como Azure) que cuentan con certificaciones internacionales de seguridad (ISO 27001, SOC 2).",
+          "Pruebas y monitoreo: Mantenemos actualizado nuestro software y realizamos pruebas de seguridad periódicas (incluyendo pruebas de penetración y análisis de código).",
+          "Políticas internas y capacitación: Contamos con políticas y procedimientos internos de privacidad y seguridad alineados con las mejores prácticas.",
+          "Respuesta a incidentes: En caso de presentarse algún incidente de seguridad que comprometa tus datos, te notificaremos oportunamente conforme a las leyes aplicables."
+        ]
+      }
+    },
+    {
+      id: "minors-privacy",
+      title: "9. Privacidad de menores de edad",
+      icon: <AlertTriangle className="w-6 h-6" />,
+      content: {
+        intro: "La protección de la privacidad de los menores es especialmente importante:",
+        items: [
+          "Greenify no está dirigida a menores de edad (generalmente considerados menores de 18 años) y no recopilamos intencionalmente información personal de niños, niñas o adolescentes.",
+          "Si eres menor de edad, por favor no utilices la App ni nos proporciones información personal.",
+          "En caso de detectar que, inadvertidamente, hemos recopilado datos personales de un menor sin el consentimiento parental verificable, tomaremos las medidas necesarias para eliminar dicha información.",
+          "Si eres padre, madre o tutor y sospechas que tu hijo/a menor nos ha proporcionado información, contáctanos de inmediato para ayudarnos a resolver la situación."
+        ]
+      }
+    },
+    {
+      id: "policy-changes",
+      title: "10. Cambios en esta política",
+      icon: <Database className="w-6 h-6" />,
+      content: {
+        intro: "Nos reservamos el derecho de actualizar o modificar esta Política de Privacidad de tiempo en tiempo:",
+        items: [
+          "Si realizamos cambios sustanciales, te lo notificaremos a través de los medios disponibles: podremos colocar un aviso destacado dentro de la App, enviarte un correo electrónico o mostrarte una notificación.",
+          "La fecha de 'Última actualización' al inicio de este documento indicará cuándo se revisó por última vez.",
+          "Te recomendamos revisar periódicamente esta página para estar al tanto de cómo protegemos tu información.",
+          "El uso continuado de Greenify después de la entrada en vigor de cualquier actualización constituye la aceptación de los cambios.",
+          "No reduciremos significativamente tus derechos como usuario en lo que respecta a la privacidad sin tu consentimiento expreso."
         ]
       }
     }
@@ -144,32 +202,40 @@ export const PrivacyPolicyPage = () => {
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Política de{" "}
+            Política de Privacidad de{" "}
             <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-              Privacidad
+              Greenify
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
-            En ARRIVAL, tu privacidad no es negociable. Protegemos tus datos con 
-            estándares de seguridad de nivel bancario y transparencia total.
+            En Greenify, nos tomamos muy en serio la privacidad de nuestros usuarios y la protección de sus datos personales. 
+            Greenify es desarrollada y operada por ARRIVAL SAS, una sociedad constituida en Colombia.
           </p>
+
+          <div className="bg-muted/30 rounded-lg p-6 mb-8">
+            <p className="text-muted-foreground leading-relaxed">
+              Esta Política de Privacidad describe cómo recopilamos, usamos, compartimos y protegemos tu información personal cuando utilizas nuestra aplicación, 
+              en cumplimiento de las leyes de protección de datos aplicables, incluyendo la normativa colombiana (derecho de Habeas Data y Ley 1581 de 2012), 
+              el Reglamento General de Protección de Datos (GDPR) de la Unión Europea y la Ley de Privacidad del Consumidor de California (CCPA), entre otras.
+            </p>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
             <div className="text-center p-6 rounded-lg bg-muted/50">
               <Lock className="w-8 h-8 text-primary mx-auto mb-3" />
-              <h3 className="font-semibold mb-2">Encriptación AES-256</h3>
-              <p className="text-sm text-muted-foreground">Máxima seguridad para todos tus datos</p>
+              <h3 className="font-semibold mb-2">Cifrado SSL/TLS</h3>
+              <p className="text-sm text-muted-foreground">Máxima seguridad en transmisión de datos</p>
             </div>
             <div className="text-center p-6 rounded-lg bg-muted/50">
               <Eye className="w-8 h-8 text-primary mx-auto mb-3" />
               <h3 className="font-semibold mb-2">Transparencia Total</h3>
-              <p className="text-sm text-muted-foreground">Sabes exactamente qué hacemos con tu información</p>
+              <p className="text-sm text-muted-foreground">Cumplimiento GDPR, CCPA y Ley 1581 de 2012</p>
             </div>
             <div className="text-center p-6 rounded-lg bg-muted/50">
               <Users className="w-8 h-8 text-primary mx-auto mb-3" />
               <h3 className="font-semibold mb-2">Control Completo</h3>
-              <p className="text-sm text-muted-foreground">Tus datos, tus reglas, tus decisiones</p>
+              <p className="text-sm text-muted-foreground">Tus datos, tus derechos, tus decisiones</p>
             </div>
           </div>
         </div>
@@ -224,34 +290,44 @@ export const PrivacyPolicyPage = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-3">
                 <Mail className="w-6 h-6" />
-                ¿Preguntas sobre tu Privacidad?
+                11. Contacto
               </CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-6">
-                Nuestro equipo de privacidad está disponible para resolver cualquier duda sobre el manejo de tus datos.
+                Si tienes preguntas, inquietudes o solicitudes relacionadas con esta Política de Privacidad o con el tratamiento de tus datos personales en Greenify, 
+                no dudes en contactarnos. Estaremos atentos para resolver tus dudas y ayudarte en lo que necesites en materia de privacidad.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="flex items-center gap-3">
-                  <Mail className="w-5 h-5 text-primary" />
-                  <div>
-                    <p className="font-medium">Email de Privacidad</p>
-                    <a href="mailto:tech.team@thearrival.tech" className="text-primary hover:underline">
-                      tech.team@thearrival.tech
-                    </a>
+              <div className="space-y-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="flex items-center gap-3">
+                    <Mail className="w-5 h-5 text-primary" />
+                    <div>
+                      <p className="font-medium">Email de Contacto</p>
+                      <a href="mailto:tech.team@thearrival.tech" className="text-primary hover:underline">
+                        tech.team@thearrival.tech
+                      </a>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Phone className="w-5 h-5 text-primary" />
+                    <div>
+                      <p className="font-medium">WhatsApp Directo</p>
+                      <a href="https://wa.me/573215086797?text=Hola%20ARRIVAL,%20tengo%20preguntas%20sobre%20privacidad%20de%20Greenify" 
+                         target="_blank" 
+                         rel="noopener noreferrer" 
+                         className="text-primary hover:underline">
+                        +57 321 508-6797
+                      </a>
+                    </div>
                   </div>
                 </div>
-                <div className="flex items-center gap-3">
-                  <Phone className="w-5 h-5 text-primary" />
-                  <div>
-                    <p className="font-medium">WhatsApp Directo</p>
-                    <a href="https://wa.me/573215086797?text=Hola%20ARRIVAL,%20tengo%20preguntas%20sobre%20privacidad" 
-                       target="_blank" 
-                       rel="noopener noreferrer" 
-                       className="text-primary hover:underline">
-                      +57 321 508-6797
-                    </a>
-                  </div>
+                <div className="bg-muted/50 rounded-lg p-4 mt-6">
+                  <p className="font-medium mb-2">Responsable del Tratamiento:</p>
+                  <p className="text-sm text-muted-foreground">
+                    <strong>ARRIVAL SAS</strong> (NIT 901.893.131-6), operador de la app Greenify<br />
+                    <strong>Dirección:</strong> Cra. 13 #85-39, Oficina 705, Bogotá D.C., Colombia
+                  </p>
                 </div>
               </div>
             </CardContent>
@@ -259,12 +335,16 @@ export const PrivacyPolicyPage = () => {
 
           {/* Legal Footer */}
           <div className="mt-12 p-6 rounded-lg bg-muted/30 text-center">
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-muted-foreground mb-4">
               Esta Política de Privacidad está regida por las leyes de Colombia y cumple con la Ley 1581 de 2012 
-              de Protección de Datos Personales y el RGPD europeo para clientes internacionales.
+              de Protección de Datos Personales, el RGPD europeo y la CCPA de California para usuarios internacionales.
             </p>
-            <p className="text-xs text-muted-foreground mt-2">
-              ARRIVAL SAS • NIT: 901.234.567-8 • Bogotá D.C., Colombia
+            <p className="text-xs text-muted-foreground">
+              <strong>Agradecemos la confianza que depositas en Greenify.</strong> Estamos comprometidos con proteger tu privacidad 
+              y contribuir a un futuro más sostenible de la mano de nuestros usuarios.
+            </p>
+            <p className="text-sm font-medium text-primary mt-4">
+              ¡Gracias por usar Greenify!
             </p>
           </div>
         </div>
