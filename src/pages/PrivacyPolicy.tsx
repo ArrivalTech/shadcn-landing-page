@@ -236,8 +236,8 @@ export const PrivacyPolicyPage = () => {
                   <Mail className="w-5 h-5 text-primary" />
                   <div>
                     <p className="font-medium">Email de Privacidad</p>
-                    <a href="mailto:privacy@thearrival.tech" className="text-primary hover:underline">
-                      privacy@thearrival.tech
+                    <a href="mailto:tech.team@thearrival.tech" className="text-primary hover:underline">
+                      tech.team@thearrival.tech
                     </a>
                   </div>
                 </div>
