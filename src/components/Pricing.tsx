@@ -26,48 +26,48 @@ interface PricingProps {
 
 const pricingList: PricingProps[] = [
   {
-    title: "Free",
+    title: "FinTech Revolution",
     popular: 0,
-    price: 0,
+    price: 10,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Get Started",
+      "Plataforma de pagos que procesa +$10M USD mensual",
+    buttonText: "Ver Caso de Estudio",
     benefitList: [
-      "1 Team member",
-      "2 GB Storage",
-      "Upto 4 pages",
-      "Community support",
-      "lorem ipsum dolor",
+      "React Native",
+      "Node.js",
+      "Blockchain",
+      "Procesamiento en tiempo real",
+      "Seguridad bancaria",
     ],
   },
   {
-    title: "Premium",
+    title: "EduTech Global",
     popular: 1,
-    price: 5,
+    price: 500,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Start Free Trial",
+      "App educativa con +500K usuarios activos",
+    buttonText: "Ver Caso de Estudio",
     benefitList: [
-      "4 Team member",
-      "4 GB Storage",
-      "Upto 6 pages",
-      "Priority support",
-      "lorem ipsum dolor",
+      "Flutter",
+      "AI/ML",
+      "Cloud Native",
+      "Gamificación",
+      "Analytics avanzados",
     ],
   },
   {
-    title: "Enterprise",
+    title: "HealthTech Innovation",
     popular: 0,
-    price: 40,
+    price: 1000,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Contact US",
+      "Telemedicina que conecta doctores y pacientes",
+    buttonText: "Ver Caso de Estudio",
     benefitList: [
-      "10 Team member",
-      "8 GB Storage",
-      "Upto 10 pages",
-      "Priority support",
-      "lorem ipsum dolor",
+      "Vue.js",
+      "Python",
+      "Microservices",
+      "Cumplimiento HIPAA",
+      "Integración con hospitales",
     ],
   },
 ];
@@ -75,20 +75,18 @@ const pricingList: PricingProps[] = [
 export const Pricing = () => {
   return (
     <section
-      id="pricing"
+      id="cases"
       className="container py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold text-center">
-        Get
+        Apps que conquistan
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           {" "}
-          Unlimited{" "}
+          millones de usuarios{" "}
         </span>
-        Access
       </h2>
       <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-        reiciendis.
+        Cada proyecto es una historia de éxito. Desde startups que levantaron inversión hasta aplicaciones que transformaron industrias completas.
       </h3>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {pricingList.map((pricing: PricingProps) => (
@@ -108,13 +106,13 @@ export const Pricing = () => {
                     variant="secondary"
                     className="text-sm text-primary"
                   >
-                    Most popular
+                    Más exitoso
                   </Badge>
                 ) : null}
               </CardTitle>
               <div>
-                <span className="text-3xl font-bold">${pricing.price}</span>
-                <span className="text-muted-foreground"> /month</span>
+                <span className="text-3xl font-bold">{pricing.price}K+</span>
+                <span className="text-muted-foreground"> usuarios</span>
               </div>
 
               <CardDescription>{pricing.description}</CardDescription>

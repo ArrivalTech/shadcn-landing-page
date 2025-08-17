@@ -18,16 +18,14 @@ export const About = () => {
             <div className="pb-6">
               <h2 className="text-3xl md:text-4xl font-bold">
                 <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-                  About{" "}
+                  Sobre{" "}
                 </span>
-                Company
+                ARRIVAL
               </h2>
               <p className="text-xl text-muted-foreground mt-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit.
+                Más que una fábrica de software: Una máquina de ejecución estratégica. 
+                Sabemos que las grandes compañías no necesitan solo código: necesitan resultados. 
+                Por eso ofrecemos un enfoque 360° que transforma ideas en ecosistemas digitales exitosos.
               </p>
             </div>
 

@@ -1,5 +1,5 @@
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { MagnifierIcon, WalletIcon, ChartIcon } from "./Icons";
+import { Search, Wallet, BarChart3, Rocket, Code, Palette, TrendingUp } from "lucide-react";
 import cubeLeg from "../assets/cube-leg.png";
 
 interface ServiceProps {
@@ -10,40 +10,45 @@ interface ServiceProps {
 
 const serviceList: ServiceProps[] = [
   {
-    title: "Code Collaboration",
+    title: "Desarrollo Full-Stack",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    icon: <ChartIcon />,
+      "Aplicaciones web y móviles con las últimas tecnologías: React, Node.js, Flutter, y más.",
+    icon: <Code className="w-10 h-10 text-primary" />,
   },
   {
-    title: "Project Management",
+    title: "DevOps & Cloud",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    icon: <WalletIcon />,
+      "Infraestructura escalable en AWS, Google Cloud y Azure. CI/CD automatizado y monitoreo 24/7.",
+    icon: <Rocket className="w-10 h-10 text-primary" />,
   },
   {
-    title: "Task Automation",
+    title: "UI/UX Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    icon: <MagnifierIcon />,
+      "Diseños que enamoran usuarios y convierten visitantes en clientes fieles. Design Systems escalables.",
+    icon: <Palette className="w-10 h-10 text-primary" />,
+  },
+  {
+    title: "Growth Hacking",
+    description:
+      "Estrategias de crecimiento digital probadas. Analytics avanzados y optimización de conversión.",
+    icon: <TrendingUp className="w-10 h-10 text-primary" />,
   },
 ];
 
 export const Services = () => {
   return (
-    <section className="container py-24 sm:py-32">
+    <section id="process" className="container py-24 sm:py-32">
       <div className="grid lg:grid-cols-[1fr,1fr] gap-8 place-items-center">
         <div>
           <h2 className="text-3xl md:text-4xl font-bold">
             <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-              Client-Centric{" "}
+              ARRIVAL: tu socio{" "}
             </span>
-            Services
+            de tecnología
           </h2>
 
           <p className="text-muted-foreground text-xl mt-4 mb-8 ">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-            dolor.
+            Para construir el futuro ahora. Cada servicio está diseñado para llevar tu idea desde el concepto hasta un producto digital que conquiste mercados globales.
           </p>
 
           <div className="flex flex-col gap-8">

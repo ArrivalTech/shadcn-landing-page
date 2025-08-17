@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { MedalIcon, MapIcon, PlaneIcon, GiftIcon } from "../components/Icons";
+import { Heart, Zap, Rocket, Globe } from "lucide-react";
 
 interface FeatureProps {
   icon: JSX.Element;
@@ -9,28 +9,28 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    icon: <MedalIcon />,
-    title: "Accessibility",
+    icon: <Heart className="w-10 h-10 text-primary" />,
+    title: "🎨 Diseño que enamora",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Interfaces adictivas que conquistan usuarios desde el primer clic",
   },
   {
-    icon: <MapIcon />,
-    title: "Community",
+    icon: <Zap className="w-10 h-10 text-primary" />,
+    title: "⚡ Arquitectura robusta",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Escalabilidad mundial preparada para millones de usuarios",
   },
   {
-    icon: <PlaneIcon />,
-    title: "Scalability",
+    icon: <Rocket className="w-10 h-10 text-primary" />,
+    title: "🚀 Agilidad de negocio",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "MVPs funcionales en semanas, no meses",
   },
   {
-    icon: <GiftIcon />,
-    title: "Gamification",
+    icon: <Globe className="w-10 h-10 text-primary" />,
+    title: "🌍 Visión global",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Estrategias para conquistar mercados internacionales",
   },
 ];
 
@@ -41,15 +41,13 @@ export const HowItWorks = () => {
       className="container text-center py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold ">
-        How It{" "}
+        Lo que nos{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Works{" "}
+          diferencia{" "}
         </span>
-        Step-by-Step Guide
       </h2>
       <p className="md:w-3/4 mx-auto mt-4 mb-8 text-xl text-muted-foreground">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-        dolor pariatur sit!
+        Metodologías ágiles probadas, herramientas de vanguardia y un equipo con experiencia internacional
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

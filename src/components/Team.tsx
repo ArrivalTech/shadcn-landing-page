@@ -24,8 +24,8 @@ interface SociaNetworkslProps {
 const teamList: TeamProps[] = [
   {
     imageUrl: "https://i.pravatar.cc/150?img=35",
-    name: "Emma Smith",
-    position: "Product Manager",
+    name: "Alejandro Restrepo",
+    position: "Lead Architect",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -43,8 +43,8 @@ const teamList: TeamProps[] = [
   },
   {
     imageUrl: "https://i.pravatar.cc/150?img=60",
-    name: "John Doe",
-    position: "Tech Lead",
+    name: "Sofía Martínez",
+    position: "Head of Design",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -62,8 +62,8 @@ const teamList: TeamProps[] = [
   },
   {
     imageUrl: "https://i.pravatar.cc/150?img=36",
-    name: "Ashley Ross",
-    position: "Frontend Developer",
+    name: "David Hernández",
+    position: "DevOps Engineer",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -78,8 +78,8 @@ const teamList: TeamProps[] = [
   },
   {
     imageUrl: "https://i.pravatar.cc/150?img=17",
-    name: "Bruce Rogers",
-    position: "Backend Developer",
+    name: "Carolina López",
+    position: "Product Manager",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -114,14 +114,13 @@ export const Team = () => {
     >
       <h2 className="text-3xl md:text-4xl font-bold">
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Our Dedicated{" "}
+          Mentes brillantes que{" "}
         </span>
-        Crew
+        construyen el futuro
       </h2>
 
       <p className="mt-4 mb-10 text-xl text-muted-foreground">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-        dolor pariatur sit!
+        Un equipo de visionarios, arquitectos y diseñadores con experiencia internacional en Fortune 500 y startups unicornio.
       </p>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
@@ -144,7 +143,7 @@ export const Team = () => {
               </CardHeader>
 
               <CardContent className="text-center pb-2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>Experto en tecnologías de vanguardia con experiencia internacional comprobada.</p>
               </CardContent>
 
               <CardFooter>

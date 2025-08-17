@@ -8,18 +8,18 @@ export const Newsletter = () => {
   };
 
   return (
-    <section id="newsletter">
+    <section id="contact">
       <hr className="w-11/12 mx-auto" />
 
       <div className="container py-24 sm:py-32">
         <h3 className="text-center text-4xl md:text-5xl font-bold">
-          Join Our Daily{" "}
+          Convirtamos tu idea en{" "}
           <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-            Newsletter
+            la próxima gran app
           </span>
         </h3>
         <p className="text-xl text-muted-foreground text-center mt-4 mb-8">
-          Lorem ipsum dolor sit amet consectetur.
+          Agenda una consulta gratuita de 30 minutos y descubre cómo podemos acelerar el desarrollo de tu proyecto.
         </p>
 
         <form
@@ -27,12 +27,19 @@ export const Newsletter = () => {
           onSubmit={handleSubmit}
         >
           <Input
-            placeholder="leomirandadev@gmail.com"
+            placeholder="tu@empresa.com"
             className="bg-muted/50 dark:bg-muted/80 "
             aria-label="email"
           />
-          <Button>Subscribe</Button>
+          <Button>📅 Agendar Consulta</Button>
         </form>
+        
+        <div className="text-center mt-8 space-y-2">
+          <p className="text-muted-foreground">Contacto directo:</p>
+          <p className="font-semibold">tech.team@thearrival.tech</p>
+          <p className="text-muted-foreground">CL 79 # 5 - 81, Bogotá D.C., Colombia</p>
+          <p className="text-muted-foreground">WhatsApp: +57 (300) 123-4567</p>
+        </div>
       </div>
 
       <hr className="w-11/12 mx-auto" />

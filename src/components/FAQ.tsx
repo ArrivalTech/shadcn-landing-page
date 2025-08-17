@@ -13,33 +13,33 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Is this template free?",
-    answer: "Yes. It is a free ChadcnUI template.",
+    question: "¿Cuánto tiempo toma desarrollar una app?",
+    answer: "Nuestros MVPs están listos en 6-8 semanas. Somos 40% más rápidos que la media del mercado manteniendo la máxima calidad.",
     value: "item-1",
   },
   {
-    question: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
+    question: "¿Qué tecnologías utilizan?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+      "React Native, Flutter, Node.js, Python, Cloud Native (AWS, Google Cloud), AI/ML, Blockchain y las últimas tecnologías de vanguardia.",
     value: "item-2",
   },
   {
     question:
-      "Lorem ipsum dolor sit amet  Consectetur natus dolores minus quibusdam?",
+      "¿Cómo garantizan la escalabilidad?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis necessitatibus maxime quis ipsa vitae cumque quo?",
+      "Arquitectura cloud nativa desde el día uno, auto-scaling, load balancing y CDN global. Preparamos tu app para millones de usuarios.",
     value: "item-3",
   },
   {
-    question: "Lorem ipsum dolor sit amet, consectetur adipisicing elit?",
-    answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    question: "¿Ofrecen soporte post-lanzamiento?",
+    answer: "Sí, ofrecemos monitoreo 24/7, mantenimiento, optimizaciones continuas y nuevas features basadas en feedback real de usuarios.",
     value: "item-4",
   },
   {
     question:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur natus?",
+      "¿Trabajan con startups y empresas grandes?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+      "Sí, trabajamos desde startups pre-semilla hasta empresas Fortune 500. Adaptamos nuestro enfoque según las necesidades específicas de cada cliente.",
     value: "item-5",
   },
 ];
@@ -51,9 +51,9 @@ export const FAQ = () => {
       className="container py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold mb-4">
-        Frequently Asked{" "}
+        Preguntas{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Questions
+          Frecuentes
         </span>
       </h2>
 
@@ -77,13 +77,13 @@ export const FAQ = () => {
       </Accordion>
 
       <h3 className="font-medium mt-4">
-        Still have questions?{" "}
+        ¿Tienes más preguntas?{" "}
         <a
           rel="noreferrer noopener"
-          href="#"
+          href="#contact"
           className="text-primary transition-all border-primary hover:border-b-2"
         >
-          Contact us
+          Contáctanos
         </a>
       </h3>
     </section>

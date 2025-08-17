@@ -18,47 +18,47 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    title: "Responsive Design",
+    title: "Consultoría Estratégica",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Validamos el modelo de negocio de tu app con precisión quirúrgica. Análisis de mercado, validación MVP y arquitectura de producto.",
     image: image4,
   },
   {
-    title: "Intuitive user interface",
+    title: "Ingeniería de Producto",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Construimos soluciones seguras, rápidas y escalables de clase mundial. Desarrollo Full-Stack, DevOps & Cloud, escalabilidad automática.",
     image: image3,
   },
   {
-    title: "AI-Powered insights",
+    title: "Diseño de Experiencia",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Cada interacción está diseñada para enamorar y fidelizar usuarios. UI/UX Design, prototipado interactivo, Design Systems.",
     image: image,
   },
 ];
 
 const featureList: string[] = [
-  "Dark/Light theme",
-  "Reviews",
-  "Features",
-  "Pricing",
-  "Contact form",
-  "Our team",
-  "Responsive design",
-  "Newsletter",
-  "Minimalist",
+  "React Native",
+  "Node.js",
+  "Cloud Native",
+  "AI/ML",
+  "DevOps",
+  "Microservices",
+  "Blockchain",
+  "Flutter",
+  "Vue.js",
 ];
 
 export const Features = () => {
   return (
     <section
-      id="features"
+      id="services"
       className="container py-24 sm:py-32 space-y-8"
     >
       <h2 className="text-3xl lg:text-4xl font-bold md:text-center">
-        Many{" "}
+        Nuestros{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Great Features
+          Servicios
         </span>
       </h2>
 

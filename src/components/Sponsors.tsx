@@ -1,4 +1,4 @@
-import { Radar } from "lucide-react";
+import { Building2, Zap, Globe, TrendingUp } from "lucide-react";
 
 interface SponsorProps {
   icon: JSX.Element;
@@ -7,28 +7,20 @@ interface SponsorProps {
 
 const sponsors: SponsorProps[] = [
   {
-    icon: <Radar size={34} />,
-    name: "Sponsor 1",
+    icon: <Building2 size={34} />,
+    name: "FinTech+",
   },
   {
-    icon: <Radar size={34} />,
-    name: "Sponsor 2",
+    icon: <Zap size={34} />,
+    name: "EdTech×",
   },
   {
-    icon: <Radar size={34} />,
-    name: "Sponsor 3",
+    icon: <Globe size={34} />,
+    name: "HealthTech○",
   },
   {
-    icon: <Radar size={34} />,
-    name: "Sponsor 4",
-  },
-  {
-    icon: <Radar size={34} />,
-    name: "Sponsor 5",
-  },
-  {
-    icon: <Radar size={34} />,
-    name: "Sponsor 6",
+    icon: <TrendingUp size={34} />,
+    name: "RetailTech□",
   },
 ];
 
@@ -39,7 +31,7 @@ export const Sponsors = () => {
       className="container pt-24 sm:py-32"
     >
       <h2 className="text-center text-md lg:text-xl font-bold mb-8 text-primary">
-        Investors and founders
+        Confiado por startups y empresas Fortune 500
       </h2>
 
       <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8">

@@ -13,138 +13,141 @@ export const Footer = () => {
             className="font-bold text-xl flex"
           >
             <LogoIcon />
-            ShadcnUI/React
+            ARRIVAL
           </a>
+          <p className="text-muted-foreground mt-2">
+            Donde tu idea se convierte en la próxima gran app. Desarrollo tecnológico de clase mundial desde Bogotá para el mundo.
+          </p>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Follow US</h3>
+          <h3 className="font-bold text-lg">Servicios</h3>
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#services"
               className="opacity-60 hover:opacity-100"
             >
-              Github
+              Desarrollo de Apps
             </a>
           </div>
 
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#services"
               className="opacity-60 hover:opacity-100"
             >
-              Twitter
+              Consultoría Estratégica
             </a>
           </div>
 
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#services"
               className="opacity-60 hover:opacity-100"
             >
-              Dribbble
-            </a>
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Platforms</h3>
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Web
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Mobile
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Desktop
+              Diseño UX/UI
             </a>
           </div>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">About</h3>
+          <h3 className="font-bold text-lg">Industrias</h3>
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#cases"
               className="opacity-60 hover:opacity-100"
             >
-              Features
+              FinTech
             </a>
           </div>
 
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#cases"
               className="opacity-60 hover:opacity-100"
             >
-              Pricing
+              HealthTech
             </a>
           </div>
 
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#cases"
               className="opacity-60 hover:opacity-100"
             >
-              FAQ
+              EdTech
             </a>
           </div>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Community</h3>
+          <h3 className="font-bold text-lg">Empresa</h3>
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#about"
               className="opacity-60 hover:opacity-100"
             >
-              Youtube
+              Sobre Nosotros
             </a>
           </div>
 
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#team"
               className="opacity-60 hover:opacity-100"
             >
-              Discord
+              Equipo
             </a>
           </div>
 
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#cases"
               className="opacity-60 hover:opacity-100"
             >
-              Twitch
+              Casos de Éxito
+            </a>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-2">
+          <h3 className="font-bold text-lg">Contacto</h3>
+          <div>
+            <a
+              rel="noreferrer noopener"
+              href="mailto:tech.team@thearrival.tech"
+              className="opacity-60 hover:opacity-100"
+            >
+              Email
+            </a>
+          </div>
+
+          <div>
+            <a
+              rel="noreferrer noopener"
+              href="https://wa.me/573001234567"
+              className="opacity-60 hover:opacity-100"
+            >
+              WhatsApp
+            </a>
+          </div>
+
+          <div>
+            <a
+              rel="noreferrer noopener"
+              href="#contact"
+              className="opacity-60 hover:opacity-100"
+            >
+              Oficina
             </a>
           </div>
         </div>
@@ -152,14 +155,14 @@ export const Footer = () => {
 
       <section className="container pb-14 text-center">
         <h3>
-          &copy; 2024 Landing page made by{" "}
+          &copy; 2025 ARRIVAL. Todos los derechos reservados.{" "}
           <a
             rel="noreferrer noopener"
             target="_blank"
-            href="https://www.linkedin.com/in/leopoldo-miranda/"
+            href="#"
             className="text-primary transition-all border-primary hover:border-b-2"
           >
-            Leo Miranda
+            "El futuro no se espera, se programa." - ARRIVAL Team
           </a>
         </h3>
       </section>
