@@ -6,6 +6,7 @@ import { Hero } from "./components/Hero";
 import { HowItWorks } from "./components/HowItWorks";
 import { Navbar } from "./components/Navbar";
 import { Newsletter } from "./components/Newsletter";
+import { PrivacyPolicy } from "./components/PrivacyPolicy";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { Services } from "./components/Services";
 import { Sponsors } from "./components/Sponsors";
@@ -23,6 +24,7 @@ function App() {
       <Services />
       <Newsletter />
       <FAQ />
+      <PrivacyPolicy />
       <Footer />
       <ScrollToTop />
     </>

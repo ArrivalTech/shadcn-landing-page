@@ -64,6 +64,15 @@ export const Footer = () => {
             </a>
           </div>
 
+          <div>
+            <a
+              rel="noreferrer noopener"
+              href="#privacy"
+              className="opacity-60 hover:opacity-100"
+            >
+              Política de Privacidad
+            </a>
+          </div>
         </div>
 
         <div className="flex flex-col gap-2">
