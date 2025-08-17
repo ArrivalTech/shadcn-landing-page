@@ -15,7 +15,7 @@ import {
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
-import { LogoIcon } from "./Icons";
+import logo from "../assets/logo.png";
 
 interface RouteProps {
   href: string;
@@ -47,9 +47,9 @@ export const Navbar = () => {
             <a
               rel="noreferrer noopener"
               href="/"
-              className="ml-2 font-bold text-xl flex"
+              className="ml-2 font-bold text-xl flex items-center gap-2"
             >
-              <LogoIcon />
+              <img src={logo} alt="ARRIVAL Logo" className="h-8 w-auto" />
               ARRIVAL
             </a>
           </NavigationMenuItem>
@@ -73,7 +73,8 @@ export const Navbar = () => {
 
               <SheetContent side={"left"}>
                 <SheetHeader>
-                  <SheetTitle className="font-bold text-xl">
+                  <SheetTitle className="font-bold text-xl flex items-center gap-2">
+                    <img src={logo} alt="ARRIVAL Logo" className="h-6 w-auto" />
                     ARRIVAL
                   </SheetTitle>
                 </SheetHeader>

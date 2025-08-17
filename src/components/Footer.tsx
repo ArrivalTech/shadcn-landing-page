@@ -1,4 +1,4 @@
-import { LogoIcon } from "./Icons";
+import logo from "../assets/logo.png";
 
 export const Footer = () => {
   return (
@@ -10,9 +10,9 @@ export const Footer = () => {
           <a
             rel="noreferrer noopener"
             href="/"
-            className="font-bold text-xl flex"
+            className="font-bold text-xl flex items-center gap-2"
           >
-            <LogoIcon />
+            <img src={logo} alt="ARRIVAL Logo" className="h-8 w-auto" />
             ARRIVAL
           </a>
           <p className="text-muted-foreground mt-2">
