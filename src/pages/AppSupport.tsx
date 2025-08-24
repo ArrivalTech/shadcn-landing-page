@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowLeft, MessageCircle, Mail, Phone, FileText, Shield, Smartphone, Bug, Star, Clock, Globe, Users, AlertTriangle, CheckCircle, HelpCircle, Settings } from "lucide-react";
+import { ArrowLeft, MessageCircle, Mail, Phone, FileText, Shield, Smartphone, Bug, Star, Clock, Globe, Users, CheckCircle, HelpCircle, Settings } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
