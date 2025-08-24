@@ -74,6 +74,16 @@ export const Footer = () => {
             </a>
           </div>
 
+          <div>
+            <a
+              rel="noreferrer noopener"
+              href="#app-support"
+              className="opacity-60 hover:opacity-100"
+            >
+              Soporte de Apps
+            </a>
+          </div>
+
         </div>
 
         <div className="flex flex-col gap-2">
